@@ -2,40 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// 18色のカラーパレット
-const colorPalette = [
-    '#E60000', '#FF9900', '#33CC33', '#0066CC', '#9933CC', '#FFCC00',
-    '#009999', '#CC66CC', '#663300', '#FF6666', '#FFCC66', '#99FF99',
-    '#66B2FF', '#CC99FF', '#FFFF99', '#66CCCC', '#FF99FF'
-];
-// const colorPalette = [
-//   '#E60000', '#FF9900', '#33CC33', '#0066CC', '#9933CC', '#FFCC00',
-//  '#009999', '#CC66CC', '#663300', '#FF6666', '#FFCC66', '#99FF99',
-//  '#66B2FF', '#CC99FF', '#FFFF99', '#66CCCC', '#FF99FF', '#996633'
-// ];
-
-// 読み込むGeoJSONファイルのパスのリストを定義
-// 各GeoJSONファイルに割り当てるカテゴリと色のマッピングは不要になります
-const geojsonFiles = [
-    { path: '/data/AwaraCity.geojson' },
-    { path: '/data/EiheijiTown.geojson' },
-    { path: '/data/EtizenCity.geojson' },
-    { path: '/data/EtizenTown.geojson' },
-    { path: '/data/FukuiCity.geojson' },
-    { path: '/data/IkedaTown.geojson' },
-    { path: '/data/KatuyamaCity.geojson' },
-    { path: '/data/MihamaTown.geojson' },
-    { path: '/data/MinamietizenTown.geojson' },
-    { path: '/data/ObamaCity.geojson' },
-    { path: '/data/OhoiTown.geojson' },
-    { path: '/data/OnoCity.geojson' },
-    { path: '/data/SabaeCity.geojson' },
-    { path: '/data/SakaiCity.geojson' },
-    { path: '/data/TakahamaTown.geojson' },
-    { path: '/data/TurugaCity.geojson' },
-    { path: '/data/WakasaTown.geojson' }
-];
-
 // GeoJSONファイルと対応する色を配列で管理
 const geoFiles = [
     { file: 'data/AwaraCity.geojson', color: '#E60000' },
@@ -55,8 +21,6 @@ const geoFiles = [
     { file: 'data/TakahamaTown.geojson', color: '#FFFF99' },
     { file: 'data/TurugaCity.geojson', color: '#66CCCC' },
     { file: 'data/WakasaTown.geojson', color: '#FF99FF' },
-
-
 ];
 
 function MapComponent() {
