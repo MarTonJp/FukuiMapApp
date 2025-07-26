@@ -65,7 +65,7 @@ function MapComponent() {
     useEffect(() => {
         Promise.all(
             geoFiles.map((item) =>
-                fetch(`/${item.file}`).then((res) => res.json())
+                fetch(process.env.PUBLIC_URL + `/${item.file}`).then((res) => res.json())
             )
         ).then((dataList) => {
             const combined = dataList.map((data, index) => ({
