@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# .estatディレクトリを無視
+.estat/
+
+# pythonディレクトリを無視
+python/
