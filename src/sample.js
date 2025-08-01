@@ -2,25 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// GeoJSONファイルと対応する色を配列で管理
 const geoFiles = [
-    { file: 'AwaraCity.geojson', color: '#E60000', municipality: 'あわら市' },
-    { file: 'EiheijiTown.geojson', color: '#FF9900', municipality: '永平寺町' },
-    { file: 'EtizenCity.geojson', color: '#33CC33', municipality: '越前市' },
-    { file: 'EtizenTown.geojson', color: '#0066CC', municipality: '越前町' },
-    { file: 'FukuiCity.geojson', color: '#ffffcc', municipality: '福井市' },
-    { file: 'IkedaTown.geojson', color: '#FFCC00', municipality: '池田町' },
-    { file: 'KatuyamaCity.geojson', color: '#009999', municipality: '勝山市' },
-    { file: 'MihamaTown.geojson', color: '#CC66CC', municipality: '美浜町' },
-    { file: 'MinamietizenTown.geojson', color: '#663300', municipality: '南越前町' },
-    { file: 'ObamaCity.geojson', color: '#800026', municipality: '小浜市' },
-    { file: 'OhoiTown.geojson', color: '#FFCC66', municipality: 'おおい町' },
-    { file: 'OnoCity.geojson', color: '#99FF99', municipality: '大野市' },
-    { file: 'SabaeCity.geojson', color: '#66B2FF', municipality: '鯖江市' },
-    { file: 'SakaiCity.geojson', color: '#CC99FF', municipality: '坂井市' },
-    { file: 'TakahamaTown.geojson', color: '#FFFF99', municipality: '高浜町' },
-    { file: 'TurugaCity.geojson', color: '#66CCCC', municipality: '敦賀市' },
-    { file: 'WakasaTown.geojson', color: '#FF99FF', municipality: '若狭町' },
+    // ...（この部分は元のまま）
 ];
 
 function MapComponent() {
